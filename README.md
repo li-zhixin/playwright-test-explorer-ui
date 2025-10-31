@@ -2,6 +2,8 @@
 
 一个用于展示和管理 Playwright 测试用例的 Web 界面，支持树形结构展示、过滤搜索、批量选择等功能。
 
+🌐 **在线体验**: [https://li-zhixin.github.io/playwright-test-explorer-ui/](https://li-zhixin.github.io/playwright-test-explorer-ui/)
+
 ## 功能特性
 
 ### 核心功能
