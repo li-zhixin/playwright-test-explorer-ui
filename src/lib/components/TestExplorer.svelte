@@ -98,7 +98,8 @@
 
   function toggleCheck(node: TestNode) {
     const newSelected = new Set(selectedTests);
-    const allTests = getAllTests(node);
+    // 使用可见的测试（考虑过滤条件）
+    const allTests = getVisibleTests(node, filterText);
 
     // 检查当前状态
     const allChecked = allTests.every((test) => newSelected.has(test));
@@ -122,11 +123,41 @@
     }
   }
 
+  // 获取匹配过滤条件的可见测试
+  function getVisibleTests(node: TestNode, filter: string): TestItem[] {
+    if (node.type === "test") {
+      return matchesFilter(node, filter) ? [node] : [];
+    } else {
+      return node.children.flatMap((child) => getVisibleTests(child, filter));
+    }
+  }
+
+  // 检查节点是否匹配过滤条件
+  function matchesFilter(node: TestNode, filter: string): boolean {
+    if (!filter) return true;
+    const lowerFilter = filter.toLowerCase();
+
+    if (node.type === "test") {
+      return (
+        node.title.toLowerCase().includes(lowerFilter) ||
+        node.location.file.toLowerCase().includes(lowerFilter)
+      );
+    } else {
+      // 套件节点：检查自身或任何子节点是否匹配
+      if (node.title.toLowerCase().includes(lowerFilter)) return true;
+      if (node.file && node.file.toLowerCase().includes(lowerFilter)) {
+        return true;
+      }
+      return node.children.some((child) => matchesFilter(child, filter));
+    }
+  }
+
   function getCheckState(node: TestNode): {
     checked: boolean;
     indeterminate: boolean;
   } {
-    const allTests = getAllTests(node);
+    // 使用可见的测试（考虑过滤条件）
+    const allTests = getVisibleTests(node, filterText);
     const checkedCount = allTests.filter((test) =>
       selectedTests.has(test),
     ).length;
