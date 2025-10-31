@@ -1,0 +1,5934 @@
+{
+  "type": "suite",
+  "title": "Root",
+  "children": [
+    {
+      "type": "suite",
+      "title": "chromium",
+      "children": [
+        {
+          "type": "suite",
+          "title": "jerryZhang\\button\\event.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\button\\event.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "测试事件面板初始状态",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\event.spec.ts",
+                "line": 171,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "测试添加事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\event.spec.ts",
+                "line": 191,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "测试事件面板的单个事件的操作-重命名事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\event.spec.ts",
+                "line": 240,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "测试事件面板的单个事件的操作-向上移动事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\event.spec.ts",
+                "line": 264,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "测试事件面板的单个事件的操作-向下移动事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\event.spec.ts",
+                "line": 308,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "测试事件面板的单个事件的操作-删除事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\event.spec.ts",
+                "line": 351,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "测试创建事件后关闭再打开事件存在且有效",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\event.spec.ts",
+                "line": 384,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "测试单击事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\event.spec.ts",
+                "line": 433,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "测试鼠标双击事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\event.spec.ts",
+                "line": 459,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "测试右键点击事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\event.spec.ts",
+                "line": 483,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "测试鼠标按下事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\event.spec.ts",
+                "line": 507,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "测试鼠标释放事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\event.spec.ts",
+                "line": 531,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "测试鼠标进入事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\event.spec.ts",
+                "line": 555,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "测试鼠标移出事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\event.spec.ts",
+                "line": 579,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "测试按钮获得焦点事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\event.spec.ts",
+                "line": 608,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "测试按钮失去焦点事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\event.spec.ts",
+                "line": 636,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\button\\property.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\button\\property.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "测试属性面板通用和基础属性区域的输入框功能",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\property.spec.ts",
+                "line": 42,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "测试属性面板主要属性区域的输入框功能",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\property.spec.ts",
+                "line": 77,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "测试关闭项目后重新打开项目属性面板输入框输入的值都存在",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\property.spec.ts",
+                "line": 122,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "测试属性面板外观属性默认状态-颜色",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\property.spec.ts",
+                "line": 181,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "测试属性面板外观属性的功能-尺寸",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\property.spec.ts",
+                "line": 227,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "测试属性面板外观属性的功能-形状",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\property.spec.ts",
+                "line": 247,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "测试属性面板外观属性的功能-风格",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\property.spec.ts",
+                "line": 267,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "测试属性面板外观属性的功能-选择内容",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\property.spec.ts",
+                "line": 297,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "测试属性面板外观属性-显示图标的表达式功能",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\property.spec.ts",
+                "line": 383,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "测试属性面板外观属性-文字间加空格开关的功能-关闭",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\property.spec.ts",
+                "line": 429,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "测试属性面板外观属性-文字间加空格开关-三个汉字",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\property.spec.ts",
+                "line": 455,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "测试属性面板外观属性-文字间加空格开关-两个英文字母",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\property.spec.ts",
+                "line": 485,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "测试属性面板交互属性-禁用的开关功能",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\property.spec.ts",
+                "line": 516,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "测试属性面板交互属性-禁用的表达式功能",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\property.spec.ts",
+                "line": 545,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "测试属性面板交互属性-加载中的表达式功能",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\property.spec.ts",
+                "line": 581,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "测试属性面板交互属性-加载中的开关功能",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\property.spec.ts",
+                "line": 614,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\button\\template.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\button\\template.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "test primary button",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\template.spec.ts",
+                "line": 209,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "test secondary button",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\template.spec.ts",
+                "line": 232,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "test default button",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\template.spec.ts",
+                "line": 249,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "test danger button",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\template.spec.ts",
+                "line": 266,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "test link button",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\template.spec.ts",
+                "line": 283,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "test circle button",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\template.spec.ts",
+                "line": 303,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "test origin button",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\button\\template.spec.ts",
+                "line": 320,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\card\\runtime\\event.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\card\\runtime\\event.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "鼠标点击事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\card\\runtime\\event.spec.ts",
+                "line": 20,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "鼠标双击事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\card\\runtime\\event.spec.ts",
+                "line": 35,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "鼠标右键点击事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\card\\runtime\\event.spec.ts",
+                "line": 50,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "鼠标按下事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\card\\runtime\\event.spec.ts",
+                "line": 68,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "鼠标释放事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\card\\runtime\\event.spec.ts",
+                "line": 84,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "鼠标进入事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\card\\runtime\\event.spec.ts",
+                "line": 100,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "鼠标移出事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\card\\runtime\\event.spec.ts",
+                "line": 114,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\card\\runtime\\property.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\card\\runtime\\property.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "默认情况",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\card\\runtime\\property.spec.ts",
+                "line": 19,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性-显示条件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\card\\runtime\\property.spec.ts",
+                "line": 39,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "基础属性-卡片类型",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\card\\runtime\\property.spec.ts",
+                "line": 60,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "基础属性-尺寸",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\card\\runtime\\property.spec.ts",
+                "line": 71,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "基础属性-显示标题",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\card\\runtime\\property.spec.ts",
+                "line": 85,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "基础属性-显示边框",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\card\\runtime\\property.spec.ts",
+                "line": 116,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "基础属性-鼠标移动时浮起",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\card\\runtime\\property.spec.ts",
+                "line": 144,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "基础属性-加载显示Loading",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\card\\runtime\\property.spec.ts",
+                "line": 181,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "卡片中内容的显示",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\card\\runtime\\property.spec.ts",
+                "line": 209,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\checkbox\\runtime\\even.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\checkbox\\runtime\\even.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "值变更时事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\checkbox\\runtime\\even.spec.ts",
+                "line": 24,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "失去焦点事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\checkbox\\runtime\\even.spec.ts",
+                "line": 39,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "获得焦点事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\checkbox\\runtime\\even.spec.ts",
+                "line": 62,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\checkbox\\runtime\\property.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\checkbox\\runtime\\property.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "默认情况",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\checkbox\\runtime\\property.spec.ts",
+                "line": 19,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性-显示条件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\checkbox\\runtime\\property.spec.ts",
+                "line": 41,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "主要属性-是否选中",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\checkbox\\runtime\\property.spec.ts",
+                "line": 74,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性-是否禁用",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\checkbox\\runtime\\property.spec.ts",
+                "line": 112,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "禁用选中属性组合",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\checkbox\\runtime\\property.spec.ts",
+                "line": 152,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\datePicker\\runtime\\basic_property.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\basic_property.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "基础属性-值",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\basic_property.spec.ts",
+                "line": 26,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "基础属性-最小日期",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\basic_property.spec.ts",
+                "line": 96,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "基础属性-最大日期",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\basic_property.spec.ts",
+                "line": 313,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "基础属性-占位符",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\basic_property.spec.ts",
+                "line": 531,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\datePicker\\runtime\\calendar_property.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\calendar_property.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "日历属性-显示今天",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\calendar_property.spec.ts",
+                "line": 32,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日历属性-点击确认按钮提交",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\calendar_property.spec.ts",
+                "line": 99,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\datePicker\\runtime\\custom_format_property.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\custom_format_property.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "日期选择器_yyyy-MM-dd格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\custom_format_property.spec.ts",
+                "line": 25,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期选择器_yy/M/d格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\custom_format_property.spec.ts",
+                "line": 42,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "月选择器_yyyy-MM格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\custom_format_property.spec.ts",
+                "line": 58,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "月选择器_yyyy-M格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\custom_format_property.spec.ts",
+                "line": 75,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "月选择器_yyyy-MMM格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\custom_format_property.spec.ts",
+                "line": 90,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "月选择器_yyyy-MMMM格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\custom_format_property.spec.ts",
+                "line": 105,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期选择器_MM-dd格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\custom_format_property.spec.ts",
+                "line": 122,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期选择器_M/d格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\custom_format_property.spec.ts",
+                "line": 140,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期选择器_dd/MM/yyyy格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\custom_format_property.spec.ts",
+                "line": 153,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期选择器_d-M-yy格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\custom_format_property.spec.ts",
+                "line": 171,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "季度选择器_yyyy-Q格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\custom_format_property.spec.ts",
+                "line": 188,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "季度选择器_QQQ yyyy格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\custom_format_property.spec.ts",
+                "line": 206,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期选择器_EE,yyyy-MM-dd格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\custom_format_property.spec.ts",
+                "line": 223,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期选择器_EEEE,d MMMM yyyy格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\custom_format_property.spec.ts",
+                "line": 244,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期选择器_yyyy-MM-dd EEEE Q格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\custom_format_property.spec.ts",
+                "line": 265,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期选择器_yy/M/d EEE格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\custom_format_property.spec.ts",
+                "line": 290,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期选择器_MMMM d,yyyy EEEE格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\custom_format_property.spec.ts",
+                "line": 312,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "组合测试日期时间选择器 - YYYY-MM-DD HH:mm:ss格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\custom_format_property.spec.ts",
+                "line": 334,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "表达式设置的自定义格式的日期时间选择器_YYYY/MM/DD HH:mm格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\custom_format_property.spec.ts",
+                "line": 366,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "绑定变量的自定义格式的日期时间选择器_MMMM D, YYYY h:mm a格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\custom_format_property.spec.ts",
+                "line": 397,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "功能开启测试",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\custom_format_property.spec.ts",
+                "line": 434,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\datePicker\\runtime\\default_property.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\default_property.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "默认情况-日期选择器",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\default_property.spec.ts",
+                "line": 19,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "默认情况-时间日期选择器",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\default_property.spec.ts",
+                "line": 78,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "默认情况-周选择器",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\default_property.spec.ts",
+                "line": 178,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "默认情况-月选择器",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\default_property.spec.ts",
+                "line": 226,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "默认情况-季度选择器",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\default_property.spec.ts",
+                "line": 280,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "默认情况-年选择器",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\default_property.spec.ts",
+                "line": 335,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\datePicker\\runtime\\event.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\event.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "值改变后-单选情况",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\event.spec.ts",
+                "line": 23,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "值改变后-多选情况",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\event.spec.ts",
+                "line": 49,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "值改变后-区间选择情况",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\event.spec.ts",
+                "line": 73,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "面板打开或关闭",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\event.spec.ts",
+                "line": 130,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日历面板切换-单选情况",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\event.spec.ts",
+                "line": 150,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日历面板切换-区间选择情况",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\event.spec.ts",
+                "line": 226,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "获得焦点和失去焦点",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\event.spec.ts",
+                "line": 305,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\datePicker\\runtime\\format_property_byfx.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byfx.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "日期选择器 - yyyy-MM-dd格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 25,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期选择器 - yyyy/MM/dd格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 43,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期选择器 - yyyy年MM月dd日格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 61,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期选择器 - MM/dd/yyyy格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 79,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期选择器 - dd-MM-yyyy格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 97,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期选择器 - dd/MM/yyyy格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 115,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期选择器 - yyyy.MM.dd格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 133,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "周选择器 - yyyy-周数格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 151,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "周选择器 - yyyy-周数周格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 167,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "周选择器 - yyyy年第周数周格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 183,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "月选择器 - yyyy-MM格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 199,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "月选择器 - yyyy/MM格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 214,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "月选择器 - yyyy年MM月格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 229,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "月选择器 - MM-yyyy格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 244,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "月选择器 - MM/yyyy格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 259,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "月选择器 - MM格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 274,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "季度选择器 - yyyy-Q格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 284,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "季度选择器 - yyyy年第X季度格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 298,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "季度选择器 - yyyy年Q格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 314,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "年选择器 - yyyy格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 328,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "年选择器 - yyyy年格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 339,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期时间选择器 - YYYY-MM-DD HH:mm:ss格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 353,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期时间选择器 - YYYY/MM/DD HH:mm:ss格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 383,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期时间选择器 - YYYY年MM月DD日 HH:mm:ss格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 413,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期时间选择器 - YYYY/MM/DD hh:mm:ss a格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 443,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期时间选择器 - MM/DD/YYYY HH:mm:ss格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 474,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期时间选择器 - DD-MM-YYYY HH:mm:ss格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 504,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\datePicker\\runtime\\format_property_byinput.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byinput.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "日期选择器 - yyyy-MM-dd格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 25,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期选择器 - yyyy/MM/dd格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 43,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期选择器 - yyyy年MM月dd日格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 61,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期选择器 - MM/dd/yyyy格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 79,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期选择器 - dd-MM-yyyy格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 97,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期选择器 - dd/MM/yyyy格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 115,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期选择器 - yyyy.MM.dd格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 133,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "周选择器 - yyyy-周数格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 151,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "周选择器 - yyyy-周数周格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 167,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "周选择器 - yyyy年第周数周格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 183,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "月选择器 - yyyy-MM格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 199,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "月选择器 - yyyy/MM格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 214,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "月选择器 - yyyy年MM月格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 229,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "月选择器 - MM-yyyy格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 244,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "月选择器 - MM/yyyy格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 259,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "月选择器 - MM格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 274,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "季度选择器 - yyyy-Q格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 284,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "季度选择器 - yyyy年第X季度格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 298,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "季度选择器 - yyyy年Q格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 314,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "年选择器 - yyyy格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 328,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "年选择器 - yyyy年格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 339,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期时间选择器 - YYYY-MM-DD HH:mm:ss格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 353,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期时间选择器 - YYYY/MM/DD HH:mm:ss格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 383,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期时间选择器 - YYYY年MM月DD日 HH:mm:ss格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 413,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期时间选择器 - YYYY/MM/DD hh:mm:ss a格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 443,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期时间选择器 - MM/DD/YYYY HH:mm:ss格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 474,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "日期时间选择器 - DD-MM-YYYY HH:mm:ss格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 504,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\datePicker\\runtime\\interactive_property.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\interactive_property.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "交互属性-禁用",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\interactive_property.spec.ts",
+                "line": 27,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性-输入框只读",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\interactive_property.spec.ts",
+                "line": 64,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性-保留无效值",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\interactive_property.spec.ts",
+                "line": 101,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性-显示清除按钮",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\interactive_property.spec.ts",
+                "line": 154,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性-显示条件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\interactive_property.spec.ts",
+                "line": 215,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\datePicker\\runtime\\interval_display_property.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\interval_display_property.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "区间选择-起始值与结束值",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\interval_display_property.spec.ts",
+                "line": 28,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "区间选择-起始日期的占位符",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\interval_display_property.spec.ts",
+                "line": 118,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "区间选择-结束日期的占位符",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\interval_display_property.spec.ts",
+                "line": 176,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性-区间选择-允许起始项部分为空",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\interval_display_property.spec.ts",
+                "line": 227,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性-区间选择-允许结束项部分为空",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\interval_display_property.spec.ts",
+                "line": 319,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性-区间选择-输入框只读",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\interval_display_property.spec.ts",
+                "line": 411,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性-区间选择-保留无效值",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\interval_display_property.spec.ts",
+                "line": 458,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性-区间选择-允许清除",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\interval_display_property.spec.ts",
+                "line": 542,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性-是否自动排序",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\datePicker\\runtime\\interval_display_property.spec.ts",
+                "line": 642,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\input\\runtime\\event.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\input\\runtime\\event.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "单行输入框组件事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input\\runtime\\event.spec.ts",
+                "line": 22,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "单行输入框鼠标事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input\\runtime\\event.spec.ts",
+                "line": 81,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "多行输入框事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input\\runtime\\event.spec.ts",
+                "line": 119,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "多行输入框鼠标事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input\\runtime\\event.spec.ts",
+                "line": 175,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "密码输入框组件事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input\\runtime\\event.spec.ts",
+                "line": 213,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "密码输入框鼠标事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input\\runtime\\event.spec.ts",
+                "line": 269,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "搜索输入框组件事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input\\runtime\\event.spec.ts",
+                "line": 307,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "搜索事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input\\runtime\\event.spec.ts",
+                "line": 363,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "搜索输入框鼠标事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input\\runtime\\event.spec.ts",
+                "line": 409,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\input\\runtime\\property.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\input\\runtime\\property.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "基础属性—文本",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input\\runtime\\property.spec.ts",
+                "line": 22,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "基础属性—占位符",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input\\runtime\\property.spec.ts",
+                "line": 65,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "基础属性—最大字符数",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input\\runtime\\property.spec.ts",
+                "line": 126,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "外观属性—是否展示字数",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input\\runtime\\property.spec.ts",
+                "line": 190,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性—是否禁用",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input\\runtime\\property.spec.ts",
+                "line": 243,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性—是否只读",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input\\runtime\\property.spec.ts",
+                "line": 280,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性—显示清除按钮",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input\\runtime\\property.spec.ts",
+                "line": 317,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性——显示条件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input\\runtime\\property.spec.ts",
+                "line": 362,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "默认单行文本框",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input\\runtime\\property.spec.ts",
+                "line": 385,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "默认搜索框",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input\\runtime\\property.spec.ts",
+                "line": 402,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "搜索框设定属性",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input\\runtime\\property.spec.ts",
+                "line": 419,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "默认密码框",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input\\runtime\\property.spec.ts",
+                "line": 463,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "密码框设定属性",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input\\runtime\\property.spec.ts",
+                "line": 480,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "默认多行文本框",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input\\runtime\\property.spec.ts",
+                "line": 524,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "多行文本框设定属性",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input\\runtime\\property.spec.ts",
+                "line": 541,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\input-number\\runtime\\event.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\input-number\\runtime\\event.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "值改变后事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-number\\runtime\\event.spec.ts",
+                "line": 21,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "按下回车时事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-number\\runtime\\event.spec.ts",
+                "line": 47,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "单步变更事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-number\\runtime\\event.spec.ts",
+                "line": 64,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "鼠标移入和移出事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-number\\runtime\\event.spec.ts",
+                "line": 99,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "获得焦点和失去焦点事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-number\\runtime\\event.spec.ts",
+                "line": 127,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\input-number\\runtime\\property.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\input-number\\runtime\\property.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "验证组件默认属性",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-number\\runtime\\property.spec.ts",
+                "line": 15,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性—显示条件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-number\\runtime\\property.spec.ts",
+                "line": 64,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "基础属性-值",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-number\\runtime\\property.spec.ts",
+                "line": 95,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "基础属性-最大值",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-number\\runtime\\property.spec.ts",
+                "line": 143,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "基础属性-最小值",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-number\\runtime\\property.spec.ts",
+                "line": 229,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "基础属性-精度",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-number\\runtime\\property.spec.ts",
+                "line": 315,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "基础属性-步长",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-number\\runtime\\property.spec.ts",
+                "line": 384,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "基础属性-占位符",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-number\\runtime\\property.spec.ts",
+                "line": 439,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性-禁用",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-number\\runtime\\property.spec.ts",
+                "line": 495,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性-只读",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-number\\runtime\\property.spec.ts",
+                "line": 532,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性-启用键盘快捷键",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-number\\runtime\\property.spec.ts",
+                "line": 576,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性-启用鼠标滚轮控制",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-number\\runtime\\property.spec.ts",
+                "line": 631,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "外观属性-显示前缀",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-number\\runtime\\property.spec.ts",
+                "line": 691,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "外观属性-显示后缀",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-number\\runtime\\property.spec.ts",
+                "line": 743,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "外观属性-显示前置标签",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-number\\runtime\\property.spec.ts",
+                "line": 795,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "外观属性-显示后置标签",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-number\\runtime\\property.spec.ts",
+                "line": 844,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\input-otp\\runtime\\even.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\input-otp\\runtime\\even.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "输入完成事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-otp\\runtime\\even.spec.ts",
+                "line": 19,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "值变更时事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-otp\\runtime\\even.spec.ts",
+                "line": 34,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "获得焦点事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-otp\\runtime\\even.spec.ts",
+                "line": 57,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "失去焦点事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-otp\\runtime\\even.spec.ts",
+                "line": 80,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\input-otp\\runtime\\property.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\input-otp\\runtime\\property.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "默认情况",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-otp\\runtime\\property.spec.ts",
+                "line": 18,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "主要属性—值",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-otp\\runtime\\property.spec.ts",
+                "line": 38,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "主要属性—输入元素数量",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-otp\\runtime\\property.spec.ts",
+                "line": 88,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "主要属性—遮罩字符",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-otp\\runtime\\property.spec.ts",
+                "line": 133,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "主要属性—分隔符",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-otp\\runtime\\property.spec.ts",
+                "line": 198,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性—禁用",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-otp\\runtime\\property.spec.ts",
+                "line": 259,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性—显示条件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\input-otp\\runtime\\property.spec.ts",
+                "line": 304,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\rate\\runtime\\basic_property.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\rate\\runtime\\basic_property.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "基础属性-评分值",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\rate\\runtime\\basic_property.spec.ts",
+                "line": 31,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "基础属性-总分",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\rate\\runtime\\basic_property.spec.ts",
+                "line": 116,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "基础属性-每项提示信息",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\rate\\runtime\\basic_property.spec.ts",
+                "line": 148,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\rate\\runtime\\business_property.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\rate\\runtime\\business_property.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "业务属性-可半选",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\rate\\runtime\\business_property.spec.ts",
+                "line": 29,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "业务属性-可清除",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\rate\\runtime\\business_property.spec.ts",
+                "line": 64,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\rate\\runtime\\event.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\rate\\runtime\\event.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "值改变后事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\rate\\runtime\\event.spec.ts",
+                "line": 27,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "获得焦点和失去焦点",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\rate\\runtime\\event.spec.ts",
+                "line": 45,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "鼠标进入和鼠标移出",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\rate\\runtime\\event.spec.ts",
+                "line": 66,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\rate\\runtime\\interactive_property.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\rate\\runtime\\interactive_property.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "交互属性-禁用",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\rate\\runtime\\interactive_property.spec.ts",
+                "line": 29,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性-开启键盘操作",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\rate\\runtime\\interactive_property.spec.ts",
+                "line": 57,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性-显示条件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\rate\\runtime\\interactive_property.spec.ts",
+                "line": 100,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\switch\\runtime\\event.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\switch\\runtime\\event.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "值变更时事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\switch\\runtime\\event.spec.ts",
+                "line": 20,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "鼠标进入事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\switch\\runtime\\event.spec.ts",
+                "line": 35,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "鼠标移出事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\switch\\runtime\\event.spec.ts",
+                "line": 48,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "获得焦点事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\switch\\runtime\\event.spec.ts",
+                "line": 63,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "失去焦点事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\switch\\runtime\\event.spec.ts",
+                "line": 77,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\switch\\runtime\\property.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\switch\\runtime\\property.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "默认情况",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\switch\\runtime\\property.spec.ts",
+                "line": 19,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "主要属性-值",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\switch\\runtime\\property.spec.ts",
+                "line": 43,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性-是否只读",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\switch\\runtime\\property.spec.ts",
+                "line": 94,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性-是否加载中",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\switch\\runtime\\property.spec.ts",
+                "line": 134,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性-显示条件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\switch\\runtime\\property.spec.ts",
+                "line": 177,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "外观属性-显示打开时内容",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\switch\\runtime\\property.spec.ts",
+                "line": 213,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "外观属性-显示关闭时内容",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\switch\\runtime\\property.spec.ts",
+                "line": 295,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "外观属性-开关内文本的英文显示",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\switch\\runtime\\property.spec.ts",
+                "line": 370,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\text\\runtime\\event.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\text\\runtime\\event.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "鼠标点击事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\text\\runtime\\event.spec.ts",
+                "line": 24,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "鼠标双击事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\text\\runtime\\event.spec.ts",
+                "line": 37,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "鼠标右键点击事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\text\\runtime\\event.spec.ts",
+                "line": 50,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "鼠标按下事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\text\\runtime\\event.spec.ts",
+                "line": 63,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "鼠标释放事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\text\\runtime\\event.spec.ts",
+                "line": 78,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "鼠标进入事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\text\\runtime\\event.spec.ts",
+                "line": 93,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "鼠标移出事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\text\\runtime\\event.spec.ts",
+                "line": 106,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\text\\runtime\\property.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\text\\runtime\\property.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "验证默认情况",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\text\\runtime\\property.spec.ts",
+                "line": 15,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性-显示条件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\text\\runtime\\property.spec.ts",
+                "line": 28,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "主要属性-文本",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\text\\runtime\\property.spec.ts",
+                "line": 56,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\timePicker\\runtime\\basic_property.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\basic_property.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "默认时间选择器",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\basic_property.spec.ts",
+                "line": 22,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "基础属性-值",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\basic_property.spec.ts",
+                "line": 52,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "基础属性-最小时间",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\basic_property.spec.ts",
+                "line": 98,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "基础属性-最大时间",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\basic_property.spec.ts",
+                "line": 287,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "基础属性-小时步长",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\basic_property.spec.ts",
+                "line": 474,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "基础属性-分钟步长",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\basic_property.spec.ts",
+                "line": 560,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "基础属性-秒步长",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\basic_property.spec.ts",
+                "line": 644,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "基础属性-占位符",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\basic_property.spec.ts",
+                "line": 732,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\timePicker\\runtime\\event.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\event.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "鼠标点击双击事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\event.spec.ts",
+                "line": 15,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "鼠标进入移出事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\event.spec.ts",
+                "line": 35,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "获得焦点和失去焦点事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\event.spec.ts",
+                "line": 57,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "区间时间选择器值变更事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\event.spec.ts",
+                "line": 87,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "单值时间选择器值变更事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\event.spec.ts",
+                "line": 126,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "面板事件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\event.spec.ts",
+                "line": 150,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\timePicker\\runtime\\format_property_byfx.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byfx.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "时间选择器_H-m-s格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 24,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "时间选择器_HH时-mm分-ss秒格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 41,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "时间选择器_H时-m分-s秒格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 58,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "时间选择器_hh-mm-ss-A格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 75,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "时间选择器_HH-mm格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 92,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "时间选择器_HH时-mm分格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 108,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "时间选择器_H时-m分格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 124,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "时间选择器_H-m格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 140,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "时间选择器_hh-mm-A格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 153,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "时间选择器_mm-ss格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 169,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "时间选择器_mm分-ss秒格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 185,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "绑定变量设置时间选择器_HH时-mm分-ss秒格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 201,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "自定义格式表达式设置时间选择器_mm-ss格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 218,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "自定义格式绑定变量设置 - hh:mm:ss-a-'在北京'格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byfx.spec.ts",
+                "line": 234,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\timePicker\\runtime\\format_property_byinput.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byinput.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "时间选择器_H-m-s格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 22,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "时间选择器_HH时-mm分-ss秒格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 39,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "时间选择器_H时-m分-s秒格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 56,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "时间选择器_hh-mm-ss-A格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 73,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "时间选择器_HH-mm格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 90,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "时间选择器_HH时-mm分格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 106,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "时间选择器_H时-m分格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 122,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "时间选择器_H-m格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 138,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "时间选择器_hh-mm-A格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 151,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "时间选择器_mm-ss格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 167,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "时间选择器_mm分-ss秒格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 183,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "时间选择器_m-s格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 199,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "24小时制 - HH:mm格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 212,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "24小时制 - HH:mm:ss格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 228,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "24小时制 - HH:mm:ss.SSS格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 245,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "24小时制 - H:m:s格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 263,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "12小时制 - hh:mm-a格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 280,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "12小时制 - h:m:s-a格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 296,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "12小时制 - hh:mm:ss-a格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 313,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "12小时制 - hh:mm:ss.SSS-a格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 330,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "含时区偏移 - HH:mm:ss-XXX格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 349,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "含时区偏移 - HH:mm:ss-xx格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 366,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "含时区偏移 - hh:mm-a-XXX格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 383,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "含时区偏移 - hh:mm:ss-a-xx格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 399,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "与固定文本组合 - 'Time:'-HH:mm:ss格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 416,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "与固定文本组合 - HH'点'mm'分'ss'秒'格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 433,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "与固定文本组合 - hh:mm:ss-a-'在北京'格式",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\format_property_byinput.spec.ts",
+                "line": 450,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\timePicker\\runtime\\interactive_property.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\interactive_property.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "交互属性-禁用",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\interactive_property.spec.ts",
+                "line": 27,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性-输入框只读",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\interactive_property.spec.ts",
+                "line": 64,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性-允许清除",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\interactive_property.spec.ts",
+                "line": 101,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性-显示条件",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\interactive_property.spec.ts",
+                "line": 156,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性-区间选择-输入框只读",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\interactive_property.spec.ts",
+                "line": 186,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性-区间选择-允许清除",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\interactive_property.spec.ts",
+                "line": 233,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "交互属性-区间选择-时间自动排序",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\interactive_property.spec.ts",
+                "line": 296,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\timePicker\\runtime\\interval_display_property.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\interval_display_property.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "区间选择-默认情况",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\interval_display_property.spec.ts",
+                "line": 30,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "区间选择-起始值与结束值",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\interval_display_property.spec.ts",
+                "line": 90,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "区间选择-起始时间的占位符",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\interval_display_property.spec.ts",
+                "line": 161,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "区间选择-结束时间的占位符",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\interval_display_property.spec.ts",
+                "line": 219,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "jerryZhang\\timePicker\\runtime\\panel_property.spec.ts",
+          "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\panel_property.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "面板属性-显示此刻按钮",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\panel_property.spec.ts",
+                "line": 29,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "面板属性-显示确定按钮",
+              "location": {
+                "file": "e2e\\tests\\jerryZhang\\timePicker\\runtime\\panel_property.spec.ts",
+                "line": 83,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "sandbox\\designer.spec.ts",
+          "file": "e2e\\tests\\sandbox\\designer.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "get designer",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\designer.spec.ts",
+                "line": 3,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "get designer by open new demo",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\designer.spec.ts",
+                "line": 9,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "get designer by click history table",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\designer.spec.ts",
+                "line": 16,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "sandbox\\helloworld.spec.ts",
+          "file": "e2e\\tests\\sandbox\\helloworld.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "new demo and create page",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\helloworld.spec.ts",
+                "line": 12,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "sandbox\\logiceditor.spec.ts",
+          "file": "e2e\\tests\\sandbox\\logiceditor.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "get logic editor",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\logiceditor.spec.ts",
+                "line": 5,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "logic editor example",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\logiceditor.spec.ts",
+                "line": 13,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "drag logic node to logic editor",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\logiceditor.spec.ts",
+                "line": 40,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "sandbox\\mainpanel.spec.ts",
+          "file": "e2e\\tests\\sandbox\\mainpanel.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "get main panel",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\mainpanel.spec.ts",
+                "line": 5,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "sandbox\\menubar.spec.ts",
+          "file": "e2e\\tests\\sandbox\\menubar.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "get menu bar",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\menubar.spec.ts",
+                "line": 4,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "menu bar example",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\menubar.spec.ts",
+                "line": 11,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "sandbox\\navbar.spec.ts",
+          "file": "e2e\\tests\\sandbox\\navbar.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "get nav bar",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\navbar.spec.ts",
+                "line": 4,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "nav bar example",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\navbar.spec.ts",
+                "line": 11,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "sandbox\\navpanel.spec.ts",
+          "file": "e2e\\tests\\sandbox\\navpanel.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "get nav panel",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\navpanel.spec.ts",
+                "line": 4,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "nav panel example",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\navpanel.spec.ts",
+                "line": 13,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "get component tab",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\navpanel.spec.ts",
+                "line": 31,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "get data tab",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\navpanel.spec.ts",
+                "line": 39,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "get logic tab",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\navpanel.spec.ts",
+                "line": 46,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "get logic node tab",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\navpanel.spec.ts",
+                "line": 53,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "get page tab",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\navpanel.spec.ts",
+                "line": 62,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "get structure tree tab",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\navpanel.spec.ts",
+                "line": 69,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "get resource tab",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\navpanel.spec.ts",
+                "line": 79,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "sandbox\\outputpanel.spec.ts",
+          "file": "e2e\\tests\\sandbox\\outputpanel.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "get output panel",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\outputpanel.spec.ts",
+                "line": 4,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "get issue tab panel",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\outputpanel.spec.ts",
+                "line": 11,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "get find result tab panel",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\outputpanel.spec.ts",
+                "line": 22,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "sandbox\\pageeditor.spec.ts",
+          "file": "e2e\\tests\\sandbox\\pageeditor.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "get page editor",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\pageeditor.spec.ts",
+                "line": 5,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "drag component to page editor",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\pageeditor.spec.ts",
+                "line": 26,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "get page editor component",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\pageeditor.spec.ts",
+                "line": 50,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "get design only component",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\pageeditor.spec.ts",
+                "line": 63,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "sandbox\\resourceeditor.spec.ts",
+          "file": "e2e\\tests\\sandbox\\resourceeditor.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "get resource editor",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\resourceeditor.spec.ts",
+                "line": 6,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "upload File",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\resourceeditor.spec.ts",
+                "line": 21,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "sandbox\\runtime.spec.ts",
+          "file": "e2e\\tests\\sandbox\\runtime.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "test counter",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\runtime.spec.ts",
+                "line": 7,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "test card",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\runtime.spec.ts",
+                "line": 23,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "sandbox\\screenshot.spec.ts",
+          "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "start page",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 302,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "start page with data",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 365,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "designer",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 378,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "main panel",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 409,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "page editor",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 427,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "menu bar",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 465,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "nav bar",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 519,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "nav panel",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 566,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "component tab",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 574,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "data tab",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 622,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "logic tab",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 660,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "logic node tab",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 699,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "page tab",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 743,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "resource tab",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 777,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "structure tree tab",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 812,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "table editor",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 830,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "logic editor",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 880,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "resource editor",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 943,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "output panel",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 988,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "find result tab",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1004,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "issue tab",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1032,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime button",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1149,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime card",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1166,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime avatar",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1183,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime badge",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1200,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime cascader",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1217,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime checkbox-group",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1234,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime checkbox",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1263,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime circle-progress",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1280,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime data-list",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1300,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime date-picker",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1393,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime free-layout",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1413,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime icon",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1433,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime image",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1450,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime input",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1467,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime line-progress",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1484,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime linear-layout",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1504,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime menu",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1530,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime number-input",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1552,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime otp-input",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1572,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime page-container",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1589,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime qrcode",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1611,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime radio-group",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1628,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime rate",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1656,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime select",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1673,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime slider",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1713,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime switch",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1730,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime table",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1747,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime tabs",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1764,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime tag",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1781,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime text",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1798,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime time-picker",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1815,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime transfer",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1835,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime tree-select",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1852,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime tree",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1872,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime upload",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1908,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime form",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1925,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime hyper-link",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1954,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime iframe",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1974,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "runtime pagination",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\screenshot.spec.ts",
+                "line": 1991,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "sandbox\\startpage.spec.ts",
+          "file": "e2e\\tests\\sandbox\\startpage.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "get start page",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\startpage.spec.ts",
+                "line": 3,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "get create project dialog",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\startpage.spec.ts",
+                "line": 9,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "sandbox\\tableeditor.spec.ts",
+          "file": "e2e\\tests\\sandbox\\tableeditor.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "get table editor",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\tableeditor.spec.ts",
+                "line": 7,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            },
+            {
+              "type": "test",
+              "title": "table editor example",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\tableeditor.spec.ts",
+                "line": 28,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "sandbox\\test.spec.ts",
+          "file": "e2e\\tests\\sandbox\\test.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "new project and create page",
+              "location": {
+                "file": "e2e\\tests\\sandbox\\test.spec.ts",
+                "line": 4,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        },
+        {
+          "type": "suite",
+          "title": "smook.spec.ts",
+          "file": "e2e\\tests\\smook.spec.ts",
+          "children": [
+            {
+              "type": "test",
+              "title": "new project and create page",
+              "location": {
+                "file": "e2e\\tests\\smook.spec.ts",
+                "line": 4,
+                "column": 5
+              },
+              "tags": [],
+              "annotations": [],
+              "expectedStatus": "passed",
+              "timeout": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
