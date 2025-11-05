@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { TestItem, TestNode, SuiteItem } from '$lib/types';
+	import type { TestItem, TestNode, SuiteItem, TreeNode } from '$lib/types';
 
 	interface Props {
 		selectedTests: Set<TestItem>;
@@ -9,17 +9,18 @@
 	let { selectedTests, rootNode }: Props = $props();
 
 	const selectedArray = $derived(Array.from(selectedTests));
-	
+
 	// 跟踪每个文件的展开状态
 	let expandedFiles = $state<Set<string>>(new Set());
 
 	// 获取文件中所有测试用例
-	function getAllTestsInFile(node: TestNode, targetFile: string): TestItem[] {
+	function getAllTestsInFile(node: TreeNode, targetFile: string): TestItem[] {
 		if (node.type === 'test') {
 			return node.location.file === targetFile ? [node] : [];
-		} else {
+		} else if (node.type === 'suite' || node.type === 'folder') {
 			return node.children.flatMap(child => getAllTestsInFile(child, targetFile));
 		}
+		return [];
 	}
 
 	// 按文件分组测试

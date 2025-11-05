@@ -16,10 +16,18 @@ export interface SuiteItem {
 	type: 'suite';
 	title: string;
 	file?: string;
-	children: TestNode[];
+	children: TreeNode[];
+}
+
+export interface FolderItem {
+	type: 'folder';
+	path: string;
+	name: string;
+	children: TreeNode[];
 }
 
 export type TestNode = TestItem | SuiteItem;
+export type TreeNode = TestNode | FolderItem;
 
 export interface TreeNodeState {
 	expanded: boolean;

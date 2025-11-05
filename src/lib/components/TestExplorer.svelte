@@ -1,6 +1,7 @@
 <script lang="ts">
-  import TreeNode from "./TreeNode.svelte";
-  import type { TestNode, TestItem, SuiteItem } from "$lib/types";
+  import TreeNodeComponent from "./TreeNode.svelte";
+  import type { TestNode, TestItem, SuiteItem, TreeNode } from "$lib/types";
+  import { buildFolderTree } from "$lib/utils/treeBuilder";
 
   interface Props {
     rootNode: SuiteItem | null;
@@ -19,36 +20,53 @@
   }: Props = $props();
 
   let filterText = $state("");
-  let expandedNodes = $state<Set<TestNode>>(new Set());
+  let expandedNodes = $state<Set<TreeNode>>(new Set());
   let fileInput = $state("");
   let fileInputElement: HTMLInputElement;
 
+  // 将原始树转换为带文件夹层级的树
+  const displayTree = $derived(buildFolderTree(rootNode));
+
   // 初始化时展开第一层
   $effect(() => {
-    if (rootNode && rootNode.children) {
-      expandedNodes = new Set([rootNode, ...rootNode.children]);
+    if (displayTree && displayTree.children) {
+      expandedNodes = new Set([displayTree, ...displayTree.children]);
     }
   });
 
   // 当过滤文本改变时，自动展开包含匹配项的节点
   $effect(() => {
-    if (filterText && rootNode) {
-      const newExpanded = new Set<TestNode>();
-      expandAllMatchingParents(rootNode, filterText, newExpanded);
+    if (filterText && displayTree) {
+      const newExpanded = new Set<TreeNode>();
+      expandAllMatchingParents(displayTree, filterText, newExpanded);
       expandedNodes = newExpanded;
     }
   });
 
   function expandAllMatchingParents(
-    node: TestNode,
+    node: TreeNode,
     filter: string,
-    expanded: Set<TestNode>,
+    expanded: Set<TreeNode>,
   ): boolean {
     if (node.type === "test") {
       const matches =
         node.title.toLowerCase().includes(filter.toLowerCase()) ||
         node.location.file.toLowerCase().includes(filter.toLowerCase());
       return matches;
+    } else if (node.type === "folder") {
+      let hasMatch = node.name.toLowerCase().includes(filter.toLowerCase()) ||
+                     node.path.toLowerCase().includes(filter.toLowerCase());
+
+      for (const child of node.children) {
+        if (expandAllMatchingParents(child, filter, expanded)) {
+          hasMatch = true;
+        }
+      }
+
+      if (hasMatch) {
+        expanded.add(node);
+      }
+      return hasMatch;
     } else {
       let hasMatch = node.title.toLowerCase().includes(filter.toLowerCase());
       if (node.file && node.file.toLowerCase().includes(filter.toLowerCase())) {
@@ -68,7 +86,7 @@
     }
   }
 
-  function toggleExpand(node: TestNode) {
+  function toggleExpand(node: TreeNode) {
     const newExpanded = new Set(expandedNodes);
     if (newExpanded.has(node)) {
       newExpanded.delete(node);
@@ -79,9 +97,9 @@
   }
 
   function expandAll() {
-    if (!rootNode) return;
-    const allNodes = new Set<TestNode>();
-    collectAllSuites(rootNode, allNodes);
+    if (!displayTree) return;
+    const allNodes = new Set<TreeNode>();
+    collectAllSuites(displayTree, allNodes);
     expandedNodes = allNodes;
   }
 
@@ -89,14 +107,14 @@
     expandedNodes = new Set();
   }
 
-  function collectAllSuites(node: TestNode, result: Set<TestNode>) {
-    if (node.type === "suite") {
+  function collectAllSuites(node: TreeNode, result: Set<TreeNode>) {
+    if (node.type === "suite" || node.type === "folder") {
       result.add(node);
       node.children.forEach((child) => collectAllSuites(child, result));
     }
   }
 
-  function toggleCheck(node: TestNode) {
+  function toggleCheck(node: TreeNode) {
     const newSelected = new Set(selectedTests);
     // 使用可见的测试（考虑过滤条件）
     const allTests = getVisibleTests(node, filterText);
@@ -115,25 +133,27 @@
     onSelectionChange(newSelected);
   }
 
-  function getAllTests(node: TestNode): TestItem[] {
+  function getAllTests(node: TreeNode): TestItem[] {
     if (node.type === "test") {
       return [node];
-    } else {
+    } else if (node.type === "folder" || node.type === "suite") {
       return node.children.flatMap((child) => getAllTests(child));
     }
+    return [];
   }
 
   // 获取匹配过滤条件的可见测试
-  function getVisibleTests(node: TestNode, filter: string): TestItem[] {
+  function getVisibleTests(node: TreeNode, filter: string): TestItem[] {
     if (node.type === "test") {
       return matchesFilter(node, filter) ? [node] : [];
-    } else {
+    } else if (node.type === "folder" || node.type === "suite") {
       return node.children.flatMap((child) => getVisibleTests(child, filter));
     }
+    return [];
   }
 
   // 检查节点是否匹配过滤条件
-  function matchesFilter(node: TestNode, filter: string): boolean {
+  function matchesFilter(node: TreeNode, filter: string): boolean {
     if (!filter) return true;
     const lowerFilter = filter.toLowerCase();
 
@@ -142,7 +162,12 @@
         node.title.toLowerCase().includes(lowerFilter) ||
         node.location.file.toLowerCase().includes(lowerFilter)
       );
-    } else {
+    } else if (node.type === "folder") {
+      // 文件夹节点：检查路径或名称是否匹配
+      if (node.name.toLowerCase().includes(lowerFilter)) return true;
+      if (node.path.toLowerCase().includes(lowerFilter)) return true;
+      return node.children.some((child) => matchesFilter(child, filter));
+    } else if (node.type === "suite") {
       // 套件节点：检查自身或任何子节点是否匹配
       if (node.title.toLowerCase().includes(lowerFilter)) return true;
       if (node.file && node.file.toLowerCase().includes(lowerFilter)) {
@@ -150,9 +175,10 @@
       }
       return node.children.some((child) => matchesFilter(child, filter));
     }
+    return false;
   }
 
-  function getCheckState(node: TestNode): {
+  function getCheckState(node: TreeNode): {
     checked: boolean;
     indeterminate: boolean;
   } {
@@ -172,8 +198,8 @@
   }
 
   function selectAll() {
-    if (!rootNode) return;
-    const allTests = getAllTests(rootNode);
+    if (!displayTree) return;
+    const allTests = getAllTests(displayTree);
     onSelectionChange(new Set(allTests));
   }
 
@@ -270,10 +296,10 @@
 
   <!-- 树形结构 -->
   <div class="tree-container">
-    {#if rootNode}
-      {#if rootNode.children && rootNode.children.length > 0}
-        {#each rootNode.children as child (child)}
-          <TreeNode
+    {#if displayTree}
+      {#if displayTree.children && displayTree.children.length > 0}
+        {#each displayTree.children as child (child)}
+          <TreeNodeComponent
             node={child}
             {selectedTests}
             {expandedNodes}
