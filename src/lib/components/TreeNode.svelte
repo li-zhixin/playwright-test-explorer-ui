@@ -1,5 +1,6 @@
 <script lang="ts">
-	import type { TestNode, TestItem, TreeNode } from '$lib/types';
+	import type { TestNode, TestItem, TreeNode } from "$lib/types";
+	import Self from "./TreeNode.svelte";
 
 	interface Props {
 		node: TreeNode;
@@ -8,8 +9,11 @@
 		expandedNodes: Set<TreeNode>;
 		onToggleExpand: (node: TreeNode) => void;
 		onToggleCheck: (node: TreeNode) => void;
-		getCheckState: (node: TreeNode) => { checked: boolean; indeterminate: boolean };
+		getCheckState: (
+			node: TreeNode,
+		) => { checked: boolean; indeterminate: boolean };
 		filterText?: string;
+		failedTestIds?: Set<string>;
 	}
 
 	let {
@@ -20,32 +24,46 @@
 		onToggleExpand,
 		onToggleCheck,
 		getCheckState,
-		filterText = ''
+		filterText = "",
+		failedTestIds = new Set(),
 	}: Props = $props();
 
 	const isExpanded = $derived(expandedNodes.has(node));
 	const checkState = $derived(getCheckState(node));
-	const isSuite = $derived(node.type === 'suite');
-	const isFolder = $derived(node.type === 'folder');
+	const isSuite = $derived(node.type === "suite");
+	const isFolder = $derived(node.type === "folder");
 
 	// 从完整路径中提取文件名
 	function getFileName(fullPath: string): string {
-		const normalized = fullPath.replace(/\\/g, '/');
-		const parts = normalized.split('/');
+		const normalized = fullPath.replace(/\\/g, "/");
+		const parts = normalized.split("/");
 		return parts[parts.length - 1];
 	}
 
 	// 检查节点是否匹配过滤条件
 	function matchesFilter(node: TreeNode, filter: string): boolean {
+		// 如果有 failedTestIds 过滤，优先使用它
+		if (failedTestIds.size > 0) {
+			if (node.type === "test") {
+				// 测试节点：检查 testId 是否在 failedTestIds 中
+				return failedTestIds.has(node.testId);
+			} else if (node.type === "folder" || node.type === "suite") {
+				// 容器节点：检查是否有任何子节点匹配
+				return node.children.some((child) => matchesFilter(child, filter));
+			}
+			return false;
+		}
+
+		// 否则使用文本过滤
 		if (!filter) return true;
 		const lowerFilter = filter.toLowerCase();
 
-		if (node.type === 'test') {
+		if (node.type === "test") {
 			return (
 				node.title.toLowerCase().includes(lowerFilter) ||
 				node.location.file.toLowerCase().includes(lowerFilter)
 			);
-		} else if (node.type === 'folder') {
+		} else if (node.type === "folder") {
 			// 文件夹节点：检查名称、路径或任何子节点是否匹配
 			if (node.name.toLowerCase().includes(lowerFilter)) return true;
 			if (node.path.toLowerCase().includes(lowerFilter)) return true;
@@ -53,7 +71,8 @@
 		} else {
 			// 套件节点：检查自身或任何子节点是否匹配
 			if (node.title.toLowerCase().includes(lowerFilter)) return true;
-			if (node.file && node.file.toLowerCase().includes(lowerFilter)) return true;
+			if (node.file && node.file.toLowerCase().includes(lowerFilter))
+				return true;
 			return node.children.some((child) => matchesFilter(child, filter));
 		}
 	}
@@ -62,9 +81,9 @@
 
 	// 获取可见的子节点
 	const visibleChildren = $derived(
-		node.type === 'suite' || node.type === 'folder'
+		node.type === "suite" || node.type === "folder"
 			? node.children.filter((child) => matchesFilter(child, filterText))
-			: []
+			: [],
 	);
 </script>
 
@@ -72,13 +91,13 @@
 	<div class="tree-node" style="padding-left: {level * 6}px">
 		<div class="node-content">
 			<!-- 展开/折叠按钮 -->
-			{#if (isSuite || isFolder) && ((node.type === 'suite' && node.children.length > 0) || (node.type === 'folder' && node.children.length > 0))}
+			{#if (isSuite || isFolder) && ((node.type === "suite" && node.children.length > 0) || (node.type === "folder" && node.children.length > 0))}
 				<button
 					class="expand-btn"
 					onclick={() => onToggleExpand(node)}
-					aria-label={isExpanded ? '折叠' : '展开'}
+					aria-label={isExpanded ? "折叠" : "展开"}
 				>
-					{isExpanded ? '▼' : '▶'}
+					{isExpanded ? "▼" : "▶"}
 				</button>
 			{:else}
 				<span class="expand-placeholder"></span>
@@ -98,7 +117,7 @@
 				{#if isFolder}
 					📁
 				{:else if isSuite}
-					{#if node.type === 'suite' && node.file}
+					{#if node.type === "suite" && node.file}
 						📄
 					{:else}
 						📦
@@ -111,9 +130,9 @@
 			<!-- 标题和位置信息 -->
 			<div class="node-info">
 				<span class="node-title">
-					{#if node.type === 'folder'}
+					{#if node.type === "folder"}
 						{node.name}
-					{:else if node.type === 'suite'}
+					{:else if node.type === "suite"}
 						{#if node.file}
 							{getFileName(node.file)}
 						{:else}
@@ -123,7 +142,7 @@
 						{node.title}
 					{/if}
 				</span>
-				{#if node.type === 'test'}
+				{#if node.type === "test"}
 					<span class="node-location">
 						{node.location.file}:{node.location.line}
 					</span>
@@ -134,7 +153,7 @@
 		<!-- 子节点 -->
 		{#if (isSuite || isFolder) && isExpanded && visibleChildren.length > 0}
 			{#each visibleChildren as child (child)}
-				<svelte:self
+				<Self
 					node={child}
 					level={level + 1}
 					{selectedTests}
@@ -143,6 +162,7 @@
 					{onToggleCheck}
 					{getCheckState}
 					{filterText}
+					{failedTestIds}
 				/>
 			{/each}
 		{/if}

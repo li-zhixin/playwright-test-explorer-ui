@@ -23,6 +23,9 @@
   let expandedNodes = $state<Set<TreeNode>>(new Set());
   let fileInput = $state("");
   let fileInputElement: HTMLInputElement;
+  let failedTestsInputElement: HTMLInputElement;
+  let failedTestIds = $state<Set<string>>(new Set());
+  let failedTestsFile = $state("");
 
   // 将原始树转换为带文件夹层级的树
   const displayTree = $derived(buildFolderTree(rootNode));
@@ -34,9 +37,9 @@
     }
   });
 
-  // 当过滤文本改变时，自动展开包含匹配项的节点
+  // 当过滤文本或 failedTestIds 改变时，自动展开包含匹配项的节点
   $effect(() => {
-    if (filterText && displayTree) {
+    if ((filterText || failedTestIds.size > 0) && displayTree) {
       const newExpanded = new Set<TreeNode>();
       expandAllMatchingParents(displayTree, filterText, newExpanded);
       expandedNodes = newExpanded;
@@ -49,13 +52,23 @@
     expanded: Set<TreeNode>,
   ): boolean {
     if (node.type === "test") {
+      // 如果有 failedTestIds 过滤，检查 testId
+      if (failedTestIds.size > 0) {
+        return failedTestIds.has(node.testId);
+      }
+      // 否则使用文本过滤
       const matches =
         node.title.toLowerCase().includes(filter.toLowerCase()) ||
         node.location.file.toLowerCase().includes(filter.toLowerCase());
       return matches;
     } else if (node.type === "folder") {
-      let hasMatch = node.name.toLowerCase().includes(filter.toLowerCase()) ||
-                     node.path.toLowerCase().includes(filter.toLowerCase());
+      let hasMatch = false;
+
+      // 如果没有 failedTestIds 过滤，检查文件夹名称
+      if (failedTestIds.size === 0) {
+        hasMatch = node.name.toLowerCase().includes(filter.toLowerCase()) ||
+                   node.path.toLowerCase().includes(filter.toLowerCase());
+      }
 
       for (const child of node.children) {
         if (expandAllMatchingParents(child, filter, expanded)) {
@@ -68,9 +81,14 @@
       }
       return hasMatch;
     } else {
-      let hasMatch = node.title.toLowerCase().includes(filter.toLowerCase());
-      if (node.file && node.file.toLowerCase().includes(filter.toLowerCase())) {
-        hasMatch = true;
+      let hasMatch = false;
+
+      // 如果没有 failedTestIds 过滤，检查套件名称
+      if (failedTestIds.size === 0) {
+        hasMatch = node.title.toLowerCase().includes(filter.toLowerCase());
+        if (node.file && node.file.toLowerCase().includes(filter.toLowerCase())) {
+          hasMatch = true;
+        }
       }
 
       for (const child of node.children) {
@@ -154,6 +172,19 @@
 
   // 检查节点是否匹配过滤条件
   function matchesFilter(node: TreeNode, filter: string): boolean {
+    // 如果有 failedTestIds 过滤，优先使用它
+    if (failedTestIds.size > 0) {
+      if (node.type === "test") {
+        // 测试节点：检查 testId 是否在 failedTestIds 中
+        return failedTestIds.has(node.testId);
+      } else if (node.type === "folder" || node.type === "suite") {
+        // 容器节点：检查是否有任何子节点匹配
+        return node.children.some((child) => matchesFilter(child, filter));
+      }
+      return false;
+    }
+
+    // 否则使用文本过滤
     if (!filter) return true;
     const lowerFilter = filter.toLowerCase();
 
@@ -251,6 +282,48 @@
   function openFileBrowser() {
     fileInputElement?.click();
   }
+
+  function openFailedTestsBrowser() {
+    failedTestsInputElement?.click();
+  }
+
+  function handleFailedTestsSelect(event: Event) {
+    const input = event.target as HTMLInputElement;
+    const file = input.files?.[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      try {
+        const content = e.target?.result as string;
+        const data = JSON.parse(content);
+
+        if (data.failedTests && Array.isArray(data.failedTests)) {
+          failedTestIds = new Set(data.failedTests);
+          failedTestsFile = file.name;
+
+          // 自动选中所有匹配的失败测试
+          if (displayTree) {
+            const allTests = getAllTests(displayTree);
+            const matchedTests = allTests.filter(test => failedTestIds.has(test.testId));
+            onSelectionChange(new Set(matchedTests));
+          }
+        } else {
+          alert('JSON 格式不正确，需要包含 failedTests 数组');
+        }
+      } catch (error) {
+        alert(
+          `解析文件失败: ${error instanceof Error ? error.message : String(error)}`,
+        );
+      }
+    };
+    reader.readAsText(file);
+  }
+
+  function clearFailedTestsFilter() {
+    failedTestIds = new Set();
+    failedTestsFile = "";
+  }
 </script>
 
 <div class="test-explorer">
@@ -264,6 +337,13 @@
     accept=".json"
     bind:this={fileInputElement}
     onchange={handleFileSelect}
+    style="display: none;"
+  />
+  <input
+    type="file"
+    accept=".json"
+    bind:this={failedTestsInputElement}
+    onchange={handleFailedTestsSelect}
     style="display: none;"
   />
 
@@ -281,6 +361,26 @@
     </div>
     {#if currentFile}
       <div class="current-file">当前文件: {currentFile}</div>
+    {/if}
+  </div>
+
+  <!-- Failed Tests 过滤区域 -->
+  <div class="filter-section">
+    <div class="filter-header">
+      <span class="filter-label">Failed Tests 过滤:</span>
+      <button class="btn-filter" onclick={openFailedTestsBrowser}>
+        选择过滤文件
+      </button>
+    </div>
+    {#if failedTestsFile}
+      <div class="filter-status">
+        <span class="filter-file">
+          已加载: {failedTestsFile} ({failedTestIds.size} 个失败测试)
+        </span>
+        <button class="btn-clear-filter" onclick={clearFailedTestsFilter}>
+          清除过滤
+        </button>
+      </div>
     {/if}
   </div>
 
@@ -307,6 +407,7 @@
             onToggleCheck={toggleCheck}
             {getCheckState}
             {filterText}
+            {failedTestIds}
           />
         {/each}
       {:else}
@@ -389,6 +490,71 @@
     font-size: 10px;
     color: #666;
     margin-top: 4px;
+  }
+
+  .filter-section {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e0e0e0;
+    background: #fff8e6;
+  }
+
+  .filter-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .filter-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .btn-filter {
+    padding: 4px 12px;
+    font-size: 11px;
+    border: 1px solid #ff9800;
+    border-radius: 3px;
+    background: #ff9800;
+    color: #fff;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .btn-filter:hover {
+    background: #f57c00;
+    border-color: #f57c00;
+  }
+
+  .filter-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
+    font-size: 10px;
+  }
+
+  .filter-file {
+    flex: 1;
+    color: #555;
+    background: #fff;
+    padding: 3px 6px;
+    border-radius: 2px;
+    border: 1px solid #ffc107;
+  }
+
+  .btn-clear-filter {
+    padding: 3px 10px;
+    font-size: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #fff;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .btn-clear-filter:hover {
+    background: #f0f0f0;
   }
 
   .toolbar {

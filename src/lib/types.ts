@@ -1,6 +1,7 @@
 export interface TestItem {
 	type: 'test';
 	title: string;
+	testId: string;
 	location: {
 		file: string;
 		line: number;
