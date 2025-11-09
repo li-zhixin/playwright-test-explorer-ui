@@ -133,9 +133,11 @@
 					{#if node.type === "folder"}
 						{node.name}
 					{:else if node.type === "suite"}
-						{#if node.file}
+						{#if node.file && node.title === node.file}
+							<!-- 文件级别的 suite，显示文件名 -->
 							{getFileName(node.file)}
 						{:else}
+							<!-- 嵌套的 suite 或没有 file 的 suite，显示 title -->
 							{node.title}
 						{/if}
 					{:else}

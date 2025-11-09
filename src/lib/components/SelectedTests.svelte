@@ -23,6 +23,68 @@
 		return [];
 	}
 
+	// 构建测试的完整路径（file › suite1 › suite2 › test）
+	function buildFullTestPath(test: TestItem): string {
+		if (!rootNode) {
+			return `${test.location.file}:${test.location.line}`;
+		}
+
+		// 在树中查找测试并构建路径
+		const path = findTestPath(rootNode, test, []);
+		if (path.length === 0) {
+			return `${test.location.file}:${test.location.line}`;
+		}
+
+		return path.join(' › ');
+	}
+
+	// 递归查找测试并构建其路径
+	function findTestPath(node: TreeNode, targetTest: TestItem, currentPath: string[]): string[] {
+		if (node.type === 'test') {
+			if (node === targetTest || node.testId === targetTest.testId) {
+				return [...currentPath, node.title];
+			}
+			return [];
+		}
+
+		if (node.type === 'suite') {
+			let newPath: string[];
+
+			if (node.file) {
+				// 检查当前路径中是否已经有文件路径
+				const hasFilePath = currentPath.length > 0 && currentPath[0].includes('/');
+
+				if (hasFilePath) {
+					// 已经有文件路径了，这是嵌套的 suite，添加 title
+					newPath = [...currentPath, node.title];
+				} else {
+					// 这是文件级别的 suite，使用文件路径作为起点
+					newPath = [node.file];
+				}
+			} else {
+				// 没有 file 属性的 suite（如 Root, chromium 等），添加 title
+				newPath = [...currentPath, node.title];
+			}
+
+			for (const child of node.children) {
+				const result = findTestPath(child, targetTest, newPath);
+				if (result.length > 0) {
+					return result;
+				}
+			}
+		} else if (node.type === 'folder') {
+			// folder 不添加到路径中，直接搜索子节点
+			for (const child of node.children) {
+				const result = findTestPath(child, targetTest, currentPath);
+				if (result.length > 0) {
+					return result;
+				}
+			}
+		}
+
+		return [];
+	}
+
 	// 按文件分组测试
 	interface FileGroup {
 		file: string;
@@ -61,23 +123,23 @@
 			.sort((a, b) => a.file.localeCompare(b.file));
 	});
 
-	// 生成文本显示（空格分隔）
+	// 生成文本显示（换行符分隔）
 	const textDisplay = $derived.by(() => {
 		const result: string[] = [];
-		
+
 		groupedByFile.forEach(group => {
 			if (group.allSelected) {
 				// 文件全选，只显示文件路径
 				result.push(group.file);
 			} else {
-				// 部分选中，显示每个测试的文件:行号
+				// 部分选中，显示每个测试的完整路径（file › suite › test）
 				group.tests.forEach(test => {
-					result.push(`${test.location.file}:${test.location.line}`);
+					result.push(buildFullTestPath(test));
 				});
 			}
 		});
-		
-		return result.join(' ');
+
+		return result.join('\n');
 	});
 
 	// 切换文件展开状态
@@ -137,7 +199,7 @@
 
 	<!-- 文本显示区域 -->
 	<div class="text-section">
-		<div class="text-header">文本格式（空格分隔）</div>
+		<div class="text-header">文本格式（换行符分隔）</div>
 		<textarea
 			class="text-display"
 			readonly
