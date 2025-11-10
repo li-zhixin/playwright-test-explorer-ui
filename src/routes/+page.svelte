@@ -1,44 +1,28 @@
 <script lang="ts">
-	import TestExplorer from '$lib/components/TestExplorer.svelte';
-	import SelectedTests from '$lib/components/SelectedTests.svelte';
-	import type { SuiteItem, TestItem } from '$lib/types';
+	import TestExplorer from '$lib/components/TestExplorer/TestExplorer.svelte';
+	import SelectedTests from '$lib/components/SelectedTests/SelectedTests.svelte';
 
-	let rootNode = $state<SuiteItem | null>(null);
-	let selectedTests = $state<Set<TestItem>>(new Set());
-	let currentFile = $state('');
-	let rightPanelWidth = $state(400); // 右侧面板的初始宽度
+	let rightPanelWidth = $state(400);
 	let isDragging = $state(false);
 
-	function handleSelectionChange(newSelection: Set<TestItem>) {
-		selectedTests = newSelection;
-	}
-
-	function handleFileChange(file: string) {
-		currentFile = file;
-	}
-
-	// 开始拖动
 	function handleMouseDown(e: MouseEvent) {
 		isDragging = true;
 		document.body.classList.add('resizing');
 		e.preventDefault();
 	}
 
-	// 拖动中
 	function handleMouseMove(e: MouseEvent) {
 		if (!isDragging) return;
 
 		const containerWidth = window.innerWidth;
 		const newRightWidth = containerWidth - e.clientX;
 
-		// 限制最小和最大宽度
 		const minWidth = 200;
 		const maxWidth = containerWidth - 200;
 
 		rightPanelWidth = Math.max(minWidth, Math.min(maxWidth, newRightWidth));
 	}
 
-	// 结束拖动
 	function handleMouseUp() {
 		isDragging = false;
 		document.body.classList.remove('resizing');
@@ -53,17 +37,11 @@
 
 <div class="app-container">
 	<div class="left-panel">
-		<TestExplorer
-			bind:rootNode
-			bind:selectedTests
-			onSelectionChange={handleSelectionChange}
-			{currentFile}
-			onFileChange={handleFileChange}
-		/>
+		<TestExplorer />
 	</div>
 	<div class="resizer" onmousedown={handleMouseDown} class:dragging={isDragging}></div>
 	<div class="right-panel" style="width: {rightPanelWidth}px;">
-		<SelectedTests {selectedTests} {rootNode} />
+		<SelectedTests />
 	</div>
 </div>
 
