@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { TestItem, TestNode, SuiteItem, TreeNode } from '$lib/types';
+	import { buildFolderTree, buildTreeMaps } from '$lib/utils/treeBuilder';
 
 	interface Props {
 		selectedTests: Set<TestItem>;
@@ -7,6 +8,14 @@
 	}
 
 	let { selectedTests, rootNode }: Props = $props();
+
+	// 预计算查找表 — 仅在 rootNode 变化时重新计算
+	const testPathMap = $derived.by(() => {
+		if (!rootNode) return new Map<string, string>();
+		const folderTree = buildFolderTree(rootNode);
+		if (!folderTree) return new Map<string, string>();
+		return buildTreeMaps(folderTree).testPathMap;
+	});
 
 	const selectedArray = $derived(Array.from(selectedTests));
 
@@ -24,68 +33,6 @@
 		} else if (node.type === 'suite' || node.type === 'folder') {
 			return node.children.flatMap(child => getAllTestsInFile(child, targetFile));
 		}
-		return [];
-	}
-
-	// 构建测试的完整路径（file › suite1 › suite2 › test）
-	function buildFullTestPath(test: TestItem): string {
-		if (!rootNode) {
-			return `${test.location.file}:${test.location.line}`;
-		}
-
-		// 在树中查找测试并构建路径
-		const path = findTestPath(rootNode, test, []);
-		if (path.length === 0) {
-			return `${test.location.file}:${test.location.line}`;
-		}
-
-		return path.join(' › ');
-	}
-
-	// 递归查找测试并构建其路径
-	function findTestPath(node: TreeNode, targetTest: TestItem, currentPath: string[]): string[] {
-		if (node.type === 'test') {
-			if (node === targetTest || node.testId === targetTest.testId) {
-				return [...currentPath, node.title];
-			}
-			return [];
-		}
-
-		if (node.type === 'suite') {
-			let newPath: string[];
-
-			if (node.file) {
-				// 检查当前路径中是否已经有文件路径
-				const hasFilePath = currentPath.length > 0 && currentPath[0].includes('/');
-
-				if (hasFilePath) {
-					// 已经有文件路径了，这是嵌套的 suite，添加 title
-					newPath = [...currentPath, node.title];
-				} else {
-					// 这是文件级别的 suite，使用文件路径作为起点
-					newPath = [node.file];
-				}
-			} else {
-				// 没有 file 属性的 suite（如 Root, chromium 等），添加 title
-				newPath = [...currentPath, node.title];
-			}
-
-			for (const child of node.children) {
-				const result = findTestPath(child, targetTest, newPath);
-				if (result.length > 0) {
-					return result;
-				}
-			}
-		} else if (node.type === 'folder') {
-			// folder 不添加到路径中，直接搜索子节点
-			for (const child of node.children) {
-				const result = findTestPath(child, targetTest, currentPath);
-				if (result.length > 0) {
-					return result;
-				}
-			}
-		}
-
 		return [];
 	}
 
@@ -127,14 +74,15 @@
 			.sort((a, b) => a.file.localeCompare(b.file));
 	});
 
-	// 生成文本显示（换行符分隔）
+	// 生成文本显示 — 使用预计算的 testPathMap，O(1) 查找
 	const textDisplay = $derived.by(() => {
 		const result: string[] = [];
 
 		groupedByFile.forEach(group => {
-			// 统一显示每个测试的完整路径（file › suite › test）
 			group.tests.forEach(test => {
-				result.push(buildFullTestPath(test));
+				result.push(
+					testPathMap.get(test.testId) ?? `${test.location.file}:${test.location.line}`
+				);
 			});
 		});
 

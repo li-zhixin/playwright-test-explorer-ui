@@ -3,7 +3,8 @@
 	import TextExportPanel from './TextExportPanel.svelte';
 	import { testDataStore } from '$lib/stores/testData';
 	import { selectionStore } from '$lib/stores/selection';
-	import { getAllTestsInFile, findTestPath } from '$lib/utils/treeUtils';
+	import { treeMapsStore } from '$lib/stores/treeMaps';
+	import { getAllTestsInFile } from '$lib/utils/treeUtils';
 	import type { TestItem, TreeNode } from '$lib/types';
 
 	let expandedFiles = $state<Set<string>>(new Set());
@@ -49,26 +50,15 @@
 			.sort((a, b) => a.file.localeCompare(b.file));
 	});
 
-	// 构建测试的完整路径
-	function buildFullTestPath(test: TestItem): string {
-		if (!$testDataStore.rootNode) {
-			return `${test.location.file}:${test.location.line}`;
-		}
-
-		const path = findTestPath($testDataStore.rootNode, test, []);
-		if (path.length === 0) {
-			return `${test.location.file}:${test.location.line}`;
-		}
-
-		return path.join(' › ');
-	}
-
-	// 生成文本显示
+	// 生成文本显示 — 使用预计算的 testPathMap，O(1) 查找
 	const textDisplay = $derived.by(() => {
+		const pathMap = $treeMapsStore.testPathMap;
 		const result: string[] = [];
 		groupedByFile.forEach((group) => {
 			group.tests.forEach((test) => {
-				result.push(buildFullTestPath(test));
+				result.push(
+					pathMap.get(test.testId) ?? `${test.location.file}:${test.location.line}`
+				);
 			});
 		});
 		return result.join('\n');

@@ -1,6 +1,73 @@
 import type { TestNode, TreeNode, FolderItem, SuiteItem, TestItem } from '$lib/types';
 
 /**
+ * 生成节点的稳定 ID
+ */
+export function getNodeId(node: TreeNode): string {
+	if (node.type === 'test') return node.testId;
+	if (node.type === 'suite') return `suite-${node.title}-${node.file || 'root'}`;
+	return `folder-${node.path}`;
+}
+
+export interface TreeMaps {
+	nodeTestsMap: Map<string, TestItem[]>;
+	testItemMap: Map<string, TestItem>;
+	testPathMap: Map<string, string>;
+}
+
+/**
+ * 单次遍历预计算所有查找表：
+ * - nodeTestsMap: Map<nodeId, TestItem[]> — 每个节点的后代测试
+ * - testItemMap: Map<testId, TestItem> — O(1) 按 ID 查找测试
+ * - testPathMap: Map<testId, string> — O(1) 查找测试的完整显示路径
+ */
+export function buildTreeMaps(root: TreeNode): TreeMaps {
+	const nodeTestsMap = new Map<string, TestItem[]>();
+	const testItemMap = new Map<string, TestItem>();
+	const testPathMap = new Map<string, string>();
+
+	const collect = (node: TreeNode, pathParts: string[]): TestItem[] => {
+		if (node.type === 'test') {
+			testItemMap.set(node.testId, node);
+			const fullPath = [...pathParts, node.title].join(' › ');
+			testPathMap.set(node.testId, fullPath);
+			return [node];
+		}
+		if (node.type === 'suite') {
+			let newPath: string[];
+			if (node.file) {
+				const hasFilePath = pathParts.length > 0 && pathParts[0].includes('/');
+				if (hasFilePath) {
+					newPath = [...pathParts, node.title];
+				} else {
+					newPath = [node.file];
+				}
+			} else {
+				newPath = [...pathParts, node.title];
+			}
+			const tests: TestItem[] = [];
+			for (const child of node.children) {
+				tests.push(...collect(child, newPath));
+			}
+			nodeTestsMap.set(getNodeId(node), tests);
+			return tests;
+		}
+		if (node.type === 'folder') {
+			const tests: TestItem[] = [];
+			for (const child of node.children) {
+				tests.push(...collect(child, pathParts));
+			}
+			nodeTestsMap.set(getNodeId(node), tests);
+			return tests;
+		}
+		return [];
+	};
+
+	collect(root, []);
+	return { nodeTestsMap, testItemMap, testPathMap };
+}
+
+/**
  * 将测试树转换为带文件夹层级的树结构
  * 保留原有的 Suite 层级，但按照文件路径组织
  */
